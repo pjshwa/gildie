@@ -1,5 +1,6 @@
 require_relative 'aged_brie_item'
 require_relative 'backstage_pass_item'
+require_relative 'conjured_item'
 require_relative 'sulfuras_item'
 
 class GildedRose
@@ -12,7 +13,7 @@ class GildedRose
     @items << Item.new("Elixir of the Mongoose", 5, 7)
     @items << SulfurasItem.new("Sulfuras, Hand of Ragnaros", 0, 80)
     @items << BackstagePassItem.new("Backstage passes to a TAFKAL80ETC concert", 15, 20)
-    @items << Item.new("Conjured Mana Cake", 3, 6)
+    @items << ConjuredItem.new("Conjured Mana Cake", 3, 6)
   end
 
   def update_quality
